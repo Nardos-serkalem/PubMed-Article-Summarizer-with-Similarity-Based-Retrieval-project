@@ -1,10 +1,12 @@
+# PubMed Article Summarizer
 
-**PubMed Article Summarizer**
-The PubMed Article Summarizer provides an efficient way to find and summarize PubMed research articles related to any user-defined query. I implemented this tool using the FAISS library for high-speed similarity search, enabling users to retrieve articles based on their semantic relevance to the query. The system scrapes PubMed for article data, encodes abstracts with SentenceTransformer embeddings, and indexes these embeddings using FAISS for streamlined retrieval. A user-friendly Gradio interface allows users to enter their search topic, retrieve relevant articles, and view a concise summary with titles, authors, links, and abstracts.
+The **PubMed Article Summarizer** is a streamlined tool for finding and summarizing relevant PubMed research articles based on any user-defined search query. I implemented this tool using FAISS for efficient similarity search, enabling users to retrieve semantically similar articles in response to their query. The project features a Gradio-based user interface for easy interaction, returning concise summaries with titles, authors, links, and abstracts for each retrieved article.
 
-Features
-FAISS Indexing for Similarity Search: FAISS (Facebook AI Similarity Search) is used to index article embeddings, providing quick retrieval of the most relevant articles based on semantic similarity.
-Sentence Transformer Embeddings: Article abstracts are encoded using SentenceTransformer embeddings to create high-dimensional representations, enhancing the relevance of retrieved articles.
-Web Scraping with BeautifulSoup: Articles are dynamically scraped from PubMed using BeautifulSoup to retrieve real-time article data.
-Gradio Interface: A user-friendly interface built with Gradio allows users to easily input search terms and view summarized results without needing technical expertise.
-Summary Display: Provides an organized summary including title, authors, abstract, and a link to each article.
+## Features
+
+- **FAISS Indexing for High-Speed Retrieval**: Uses FAISS (Facebook AI Similarity Search) to create a quick and efficient index of article embeddings.
+- **Semantic Embeddings with SentenceTransformer**: Encodes article abstracts to improve the relevance and accuracy of retrieval results.
+- **Dynamic Data Retrieval**: Uses BeautifulSoup to scrape real-time data from PubMed, ensuring up-to-date results.
+- **User-Friendly Gradio Interface**: An intuitive interface for entering search topics and retrieving organized summaries without requiring technical expertise.
+- **Organized Summaries**: Returns article titles, authors, abstracts, and direct links to PubMed.
+
